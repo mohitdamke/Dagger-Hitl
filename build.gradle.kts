@@ -4,3 +4,11 @@ plugins {
     alias(libs.plugins.jetbrains.kotlin.android) apply false
     id("com.google.dagger.hilt.android") version "2.44" apply false
 }
+buildscript {
+//    ext {
+//        compose_version = "1.1.0"
+//    }
+    dependencies {
+        classpath("com.google.dagger:hilt-android-gradle-plugin:2.51.1")
+    }
+}
